@@ -1,0 +1,290 @@
+.service{
+	&__inner{
+		display: flex;
+		flex-direction: column;
+		@media(min-width:960px){
+		flex-direction: row;
+			.tab::after{
+				content: "";
+				position: absolute;
+				border: 1px solid rgba(133, 143, 164, 0.2);
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				opacity: 20%;
+			}
+			.tabs{
+				flex-direction: column;
+				justify-content: start;
+				height: 200px;
+				.tab{
+					width: 100%;
+				}
+			}
+			.content::after{
+				content: "";
+				position: absolute;
+				border: 1px solid rgba(133, 143, 164, 0.2);
+				height: 100%;
+				left: 0;
+				opacity: 20%;
+			}
+			.content{
+			position: relative;
+			padding-left: 60px;
+			}
+		}
+		.tabs{
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			width: 100%;
+			justify-content: space-between;
+			.tab{
+				background: transparent;
+				color: #384255;
+				cursor: pointer;
+				position: relative;
+				margin: 0px;
+				padding: 0px;
+				padding-bottom: 20px;
+				padding-top: 20px;
+			}
+
+			.tab.active{
+				color: #F53B49;
+			}
+		}
+		.content{
+			flex: 5;
+			display: flex;
+			.container{
+				margin: 0px !important;
+				max-width: 690px;
+			}
+			.form{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				.label{
+					margin-top: 12px;
+					width: 48%;
+					display: flex;
+					flex-direction: column;
+					font-weight: 700;
+					position: relative;
+					.number,
+					.select,
+					.date,
+					.text,
+					.name,
+					.mail,
+					.phone{
+						width: 100%;
+						margin-top: 8px;
+						background: #FFFFFF;
+						border: 1px solid rgba(144, 156, 181, 0.3);
+						border-radius: 6px;
+						font-size: 16px;
+						color: #909CB5;
+						padding: 10px 5px;
+						color: #384255;
+					}
+					.number::placeholder{
+						opacity: 30%;
+					}
+					.file{
+						opacity: 0;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+					}
+					.date{
+						width: max-content;
+					}
+				}
+				.label-file{
+					color: #384255;
+					font-weight: 400;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+				}
+				.label-number{
+					width: 100%;
+					display: block;
+				}
+				.subject{
+					font-weight: 700;
+					width: 100%;
+					color: #384255;
+				}
+				.label-city,
+				.label-street,
+				.label-housing,
+				.label-house,
+				.label-apartment,
+				.label-name,
+				.label-mail,
+				.label-phone{
+					font-weight: 400;
+				}
+				.label-name{
+					width: 100%;
+				}
+				.label-housing,
+				.label-house,
+				.label-apartment{
+					width: 30%;
+				}
+			}
+			.form-adress{
+				position: relative;
+			}
+			.form-adress::after{
+				content: "";
+				border: 1px solid rgba(133, 143, 164, 0.2);
+				width: 100%;
+				top: 0;
+				position: absolute;
+				opacity: 20%;
+			}
+			.btn{
+				display: block;
+				width: 168px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+.services__video-fuq{
+	.content{
+		display: flex;
+		flex-direction: column;
+	}
+	.tabs-btn{
+		width: 100%;
+		max-width: 851px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media(min-width:846px){
+			flex-direction: row;
+		}
+	}
+	.tab-btn{
+		cursor: pointer;
+		text-align: center;
+		margin: 0px;
+		margin-bottom: 20px;
+	}
+	.items{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.item{
+			cursor: pointer;
+			position: relative;
+			max-width: 320px;
+			transition: 0.3s all;
+			padding-bottom: 30px;
+			.subject{
+				padding-top: 20px;
+				color: #384255;
+				font-weight: 800;
+				font-size: 20px;
+			}
+			.text{
+				font-size: 14px;
+			}
+			.subject{
+				width: 100%;
+			}
+			.play-img{
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: 0.3s all;
+				img{
+					width: 100%;
+				}
+			}
+			.play-img::before{
+				content: "";
+				width: 48px;
+				height: 48px;
+				background: #fff;
+				border-radius: 100%;
+				background-image: url(../images/play.svg);
+				position: absolute;
+				opacity: 50%;
+				transition: 0.3s all;
+				z-index: 1;
+			}
+		}
+		.item:hover{
+			transition: 0.3s all;
+			.play-img::before{
+				opacity: 100%;
+			}
+			.play-img::after{
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				opacity: 50%;
+				background: #000;
+				border-radius: 8px;
+				transition: 0.3s all;
+			}
+			.subject{
+				color: #F53B49;
+			}
+			.text{
+				color: #F53B49;
+			}
+		}
+	}
+}
+.service__fitnes-club{
+	.content{
+		flex-direction: column;
+	}
+	.text{
+		line-height: 27px;
+	}
+	.items::after{
+		content: "";
+		border: 1px solid rgba(133, 143, 164, 0.2);
+		width: 100%;
+		position: absolute;
+		top: 30px;
+		opacity: 20%;
+	}
+	.items::before{
+		content: "";
+		border: 1px solid rgba(133, 143, 164, 0.2);
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+		opacity: 20%;
+	}
+	.items{
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		.item{
+			max-width: 495px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}

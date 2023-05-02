@@ -1,0 +1,69 @@
+.intro{
+	&__inner{
+		padding-top: 20px;
+	}
+	&__swiper{
+		.intro-slide{
+			width: 100%;
+			height: 500px;
+			background: linear-gradient(180deg, #DEDFE7 0%, rgba(233, 234, 239, 0) 100%), #E9EAEF;
+			position: relative;
+			.subtitle{
+				font-weight: 900;
+				color: #F53B49;
+			}
+			.title{
+				padding-top: 12px;
+				font-weight: 900;
+				span{
+					font-weight: 400;
+					color: #1A1A25;
+				}
+				@media(min-width:1200px){
+					font-size: 50px;
+				}
+			}
+			.btn{
+				margin-top: 12px;
+			}
+			.text-content{
+				padding-top: 29px;
+				z-index: 4;
+				margin-left: 20px;
+				@media(min-width:1200px){
+					padding-top: 63px;
+				}
+			}
+			.img{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				max-width: 350px;
+				@media(min-width:750px){
+					max-width: 600px;
+				}
+				@media(min-width:1200px){
+					right: 100px;
+				}
+			}
+		}
+		.swiper-slide::after{
+			content: "";
+			width: 0; 
+			height: 0;
+			border-left: 700px solid transparent;
+			border-right: 500px solid transparent;
+			position: absolute;
+			bottom: 0;
+			opacity: 90%;
+			border-bottom: 100px solid #F53B49;
+		}
+		.swiper-buttons{
+			position: absolute;
+			bottom: 20px;
+			z-index: 10;
+			right: 15px;
+		}
+	}
+}

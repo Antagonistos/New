@@ -1,0 +1,175 @@
+.market{
+	.tabs{
+		flex-wrap: wrap;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		.buttons{
+			display: flex;
+			.button{
+				border: transparent;
+				color: #384255;
+				font-weight: 800;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+	.tabs-sort{
+		.swiper-wrapper{
+				
+		}
+
+		.btn{
+			width: 134px;
+			align-self: center;
+			height: auto;
+			background: rgba(144, 156, 181, 0.2);
+			border-radius: 4px;
+			color: #384255;
+			border: transparent;
+		}
+		.btn:hover,
+		.btn.active{
+			background: #F53B49;
+			color: #fff;
+		}
+	}
+	.tabs-filter{
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+	.tab{
+		font-size: 14px;
+		font-weight: 400;
+		color: #384255;
+		opacity: 50%;
+		display: flex;
+		align-items: center;
+		background: transparent;
+	}
+	.tab.active::before{
+		content: url(../images/sort.png);
+	}
+	.tab.active{
+		font-weight: 700;
+		opacity: 1;
+	}
+	}
+	&-items{
+		display: flex;
+		max-width: 1170px;
+		justify-content: space-between;
+		margin: 0 !important;
+	}
+	&-cards__inner{
+		height: 100%;
+		display: flex;
+		.subject{
+			font-weight: 800;
+		}
+		// Это товары
+		.market-items{
+			padding-right: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			.item{
+				height: max-content;
+				margin-bottom: 30px;
+			}
+		}
+		// Это фильтры
+		.cards__filter{
+			position: relative;
+			padding-left: 30px;
+			display: none;
+			.filter-items:first-child{
+				padding-top: 0px;
+			}
+			.filter-items{
+				width: 179px;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				.range-price{
+					padding-top: 26px;
+				}
+				.price-content{
+					display: flex;
+					
+					.input-price{
+						width: 77px;
+						background-color: #fff;
+						border: transparent;
+						margin-right: 2px;
+						margin-left: 2px;
+						border: 1px solid rgba(133, 143, 164, 0.2);
+						border-radius: 4px;
+						padding: 7px 0px 7px 11px;
+					}
+					.input-price::before{
+						content: "-";
+					}
+				}
+				.inpute-checkbox{
+					font-size: 14px;
+					padding-top: 12px;
+					color: #384255;
+					opacity: 80%;
+				}
+			}
+			.filter-items::before{
+				content: "";
+				width: 100%;
+				height: 1px;
+				bottom: 0;
+				right: 0;
+				background-color: #858FA433;
+				position: absolute;
+				z-index: -1;
+			}
+		}
+		.cards__filter::before{
+			content: "";
+			width: 1px;
+			height: 100%;
+			left: 0;
+			background-color: #858FA433;
+			position: absolute;
+			z-index: -1;
+		}
+	}
+	.compilation-market{
+		max-width: 720px;
+		@media(min-width:1400px){
+			max-width: 1170px;
+			.compilation__items{
+				justify-content: space-between;
+				.item{
+					width: 100%;
+					max-width: 570px;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media(min-width:920px){
+	.market{
+		.tabs{
+			display: block;
+			.buttons{
+				display: none;
+			}
+		}
+		.cards__filter{
+			display: block;
+		}
+	}
+}

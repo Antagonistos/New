@@ -1,0 +1,50 @@
+.reviews{
+	&-content{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+	}
+	&-info{
+		max-width: 390px;
+		background: #FFFFFF;
+		display: flex;
+		justify-content: space-between;
+		border-radius: 6px;
+		padding: 20px;
+		flex: 1;
+		flex-wrap: wrap;
+
+		.subject{
+			font-size: 30px;
+			font-weight: 700;
+			float: left;
+			padding-right: 8px;
+		}
+		.link-menu{
+			padding-top: 20px;
+		}
+	}
+	&-comment{
+		max-width: 450px;
+		flex: 1;
+		flex-wrap: wrap;
+
+		.user{
+			.rank{
+			}
+			.avatar{
+				float: left;
+				padding-right: 12px;
+			}
+		}
+		.data{
+			opacity: 50%;
+			float: right;
+		}
+		.text{
+			margin-top: 12px;
+			color: #000000;
+		}
+	}
+}
