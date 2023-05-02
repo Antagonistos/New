@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__head-menu">
+					<a href="index.html" class="header__logo--dekstop">
+						<img class="logo" src="./images/logo.png" alt="">
+					</a>
+					<button class="header__country-search--dekstop link-menu">
+						Москва
+					</button>
+					<div class="header__partner-menu">
+						<a class="item link-menu" href="#">Для дилеров</a>
+						<a class="item link-menu active" href="#">Become a Partner </a>
+					</div>
+					<div class="header__number-menu">
+						<a class="link" href="tel:+78000000000">+7 (800) 000-00-00 <a href="#" class="link-menu">МСК</a></a>
+						<a href="#" class="link" id="call-model"><span>Заказать звонок</span></a>
+					</div>
+					<div class="header__sign-menu" id="sign-up-menu">
+						<a class="sign" href="#" id="sign">Войти</a>
+						<div class="modal" id="modal">
+							<h4></h4>
+						</div>
+						<img src="./images/profile.png" alt="" id="sign-avatar">
+					</div>
+				</div>
+				<div class="header__main-menu">
+					<a href="index.html" class="header__logo">
+						<img class="logo" src="./images/logo.png" alt="">
+					</a>
+					<button class="header__country-search link-menu">
+						Москва
+					</button>
+					<button class="header__catalog-btn">
+						Каталог
+					</button>
+					<div class="header__search decore-line">
+						<img src="./images/search.svg" alt="">
+					</div>
+					<ul class="header__links">
+						<a href="brands.html" class="link">Бренды</a>
+						<a href="service.html" class="link">Сервис</a>
+						<a href="services.html" class="link">Услуги</a>
+						<a href="support.html" class="link">Поддержка</a>
+						<a href="amount.html" class="link">О компании</a>
+						<a href="blog.html" class="link">Блог</a>
+						<a href="location.html" class="link">Где купить</a>
+						<a href="contact.html" class="link">Контакты</a>
+
+					</ul>
+					<ul class="header__item-info" id="hoverItems">
+						<li class="item" id="analyticsItem">
+							<a href="comparison.html" class=" analytics">
+								<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<rect y="7.5" width="2" height="10" rx="1" fill="white" />
+										<rect x="5" y="0.5" width="2" height="17" rx="1" fill="white" />
+										<rect x="10" y="7.5" width="2" height="10" rx="1" fill="white" />
+										<rect x="15" y="4.5" width="2" height="13" rx="1" fill="white" />
+									</g>
+								</svg>
+
+							</a>
+							<div class="content"></div>
+						</li>
+						<li class="item" id="favItem">
+							<a href="#" class=" favorites" id="favorites">
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<path
+											d="M22.0718 1.96031C19.4616 -0.649176 15.2154 -0.649176 12.6059 1.96031L11.9998 2.56606L11.394 1.96031C8.78455 -0.64953 4.53796 -0.64953 1.92847 1.96031C-0.628032 4.51681 -0.644633 8.56914 1.88997 11.3867C4.2017 13.9555 11.0196 19.5054 11.3089 19.7403C11.5053 19.9 11.7416 19.9777 11.9765 19.9777C11.9842 19.9777 11.992 19.9777 11.9994 19.9773C12.2424 19.9886 12.4872 19.9053 12.6899 19.7403C12.9792 19.5054 19.7979 13.9555 22.1103 11.3863C24.6445 8.56914 24.6279 4.51681 22.0718 1.96031ZM20.535 9.96889C18.7326 11.9712 13.7782 16.1009 11.9994 17.5663C10.2207 16.1013 5.26732 11.9719 3.46527 9.96925C1.69712 8.00401 1.68052 5.20521 3.42677 3.45896C4.31861 2.56747 5.48984 2.12137 6.66107 2.12137C7.8323 2.12137 9.00354 2.56711 9.89538 3.45896L11.2277 4.79125C11.3863 4.94984 11.5862 5.0445 11.796 5.0777C12.1365 5.15081 12.5059 5.0558 12.7708 4.7916L14.1038 3.45896C15.8879 1.67562 18.7898 1.67598 20.5728 3.45896C22.319 5.20521 22.3024 8.00401 20.535 9.96889Z"
+											fill="white" />
+									</g>
+								</svg>
+
+							</a>
+							<div class="content"></div>
+						</li>
+						<li class="item" id="cartItem">
+							<a href="cart.html" class=" carts" id="carts-icon">
+								<svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<path
+											d="M0.9 7.73325H20.1V21.4999C20.1 23.212 18.7121 24.5999 17 24.5999H4C2.28792 24.5999 0.9 23.212 0.9 21.4999V7.73325Z"
+											stroke="white" stroke-width="1.8" />
+										<path
+											d="M5.83464 12.6667L5.83464 5.00008C5.83464 2.79095 7.6255 1.00008 9.83464 1.00008H11.168C13.3771 1.00008 15.168 2.79094 15.168 5.00008L15.168 12.6667"
+											stroke="white" stroke-width="1.8" />
+									</g>
+								</svg>
+							</a>
+							<div class="content">
+								<div class="content__inner">
+									<ul class="items" id="items">
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="header__burger ">
+						<button class="header__burger-btn" id="burger-btn">
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+						</button>
+						<div class="header__burger-content">
+							<div class="burger__top-content">
+								<button class="header__country-search link-menu">
+									Москва
+								</button>
+								<div class="header__sign-menu">
+									<a class="sign" href="#">Войти</a>
+									<img src="./images/profile.png" alt="">
+								</div>
+							</div>
+							<div class="search">
+								<img src="./images/search.svg" alt="" class="img">
+								<input type="text" placeholder="Поиск">
+							</div>
+
+							<div class="catalog">
+								<h2 class="title">Каталог</h2>
+								<button class="button">
+									<a href="#">Для дома</a>
+									<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<button class="button">
+									<a href="#">Для фитнес клубов</a>
+									<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+
+							<ul class="header__links">
+								<a href="brands.html" class="link">Бренды</a>
+								<a href="service.html" class="link">Сервис</a>
+								<a href="services.html" class="link">Услуги</a>
+								<a href="support.html" class="link">Поддержка</a>
+								<a href="amount.html" class="link">О компании</a>
+								<a href="blog.html" class="link">Блог</a>
+								<a href="location.html" class="link">Где купить</a>
+								<a href="contact.html" class="link">Контакты</a>
+
+							</ul>
+							<div class="header__number-menu">
+								<a class="link" href="tel:+78000000000">+7 (800) 000-00-00 <a href="#"
+										class="link-menu">МСК</a></a>
+								<a href="#" class="link"><span>Заказать звонок</span></a>
+							</div>
+							<div class="header__partner-menu">
+								<a class="item link-menu" href="#">Для дилеров</a>
+								<a class="item link-menu" href="#">Become a Partner </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__drop-menu">
+			<div class="header__inner">
+				<div class="container">
+					<ul class="drop-menu">
+						<a href="catalog-house.html" class="item decore-line">
+							<span>Для дома</span>
+							</ф>
+							<a href="catalog-club.html" class="item decore-pointer">
+								<span>Для фитнес клуба</span>
+							</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="models" id="modelItem">
+			<div class="container">
+				<div class="models__inner">
+					<section class="road road-offset">
+						<div class="container">
+							<a href="index.html" class="index"><svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M14.6896 7.87711L7.87425 0.664272C7.82518 0.612198 7.76689 0.570885 7.70273 0.542697C7.63856 0.514509 7.56978 0.5 7.50031 0.5C7.43084 0.5 7.36206 0.514509 7.29789 0.542697C7.23373 0.570885 7.17544 0.612198 7.12637 0.664272L0.311065 7.87711C0.112513 8.08739 0 8.37303 0 8.67094C0 9.28953 0.474871 9.79247 1.05895 9.79247H1.77704V14.9392C1.77704 15.2494 2.01365 15.5 2.30652 15.5H6.44136V11.5746H8.29452V15.5H12.6941C12.987 15.5 13.2236 15.2494 13.2236 14.9392V9.79247H13.9417C14.223 9.79247 14.4927 9.67506 14.6912 9.46302C15.1032 9.02492 15.1032 8.3152 14.6896 7.87711Z"
+										fill="#B9C0CF" />
+								</svg>
+							</a> <a href="#" class="road-link"> Для фитнес клубов » Беговые дорожки » Беговая дорожка Bowflex
+								BXT128 </a>
+						</div>
+					</section>
+					<h2 class="title" id="titleItem">Беговая дорожка Bowflex BXT128</h2>
+					<div class="models__inner-content">
+						<div class="models-img">
+							<div class="models-img__inner">
+								<div class="bg-img">
+									<img src="./images/bg-slidepng.png" alt="" id="itemImg">
+								</div>
+								<div class="swiper models-swiper">
+									<div class="swiper-wrapper models-swiper-wrapper">
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small2.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small3.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small4.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small5.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small6.png" alt="">
+										</div>
+										<div class="swiper-slide models-swiper-slide"><img src="./images/slide-small7.png" alt="">
+										</div>
+									</div>
+									<div class="swiper-buttons">
+										<button class="btn-prev-small">
+											<svg width="14" height="32" viewBox="0 0 14 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M13 30.5L2 16L13 1.5" stroke="#858FA4" stroke-width="2" />
+											</svg>
+										</button>
+										<button class="btn-next-small">
+											<svg width="14" height="32" viewBox="0 0 14 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1.5L12 16L1 30.5" stroke="#858FA4" stroke-width="2" />
+											</svg>
+
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="models-info">
+							<div class="banner">
+								<img src="./images/bowflex.png" alt="">
+								<ul>
+									<li>
+										<img src="./images/vector1.svg" alt="">
+										Выгодно
+									</li>
+									<li>
+										<img src="./images/vector2.svg" alt="">
+										Рекомендуем
+									</li>
+									<li>
+										<img src="./images/vector3.svg" alt="">
+										Новинка
+									</li>
+								</ul>
+							</div>
+							<div class="info">
+								<div class="info__text">
+									<ul>
+										<li id="addFavBtn">
+
+											<svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M18.757 2.17562C16.5388 -0.0419627 12.9303 -0.0419627 10.7127 2.17562L10.1976 2.69039L9.68282 2.17562C7.46524 -0.0422629 3.85642 -0.0422629 1.63884 2.17562C-0.533711 4.34817 -0.547819 7.7919 1.60613 10.1863C3.57067 12.3693 9.36465 17.0857 9.61049 17.2854C9.77737 17.421 9.97818 17.4871 10.1778 17.4871C10.1844 17.4871 10.191 17.4871 10.1973 17.4868C10.4038 17.4964 10.6118 17.4255 10.7841 17.2854C11.0299 17.0857 16.8245 12.3693 18.7897 10.186C20.9433 7.7919 20.9292 4.34817 18.757 2.17562ZM17.451 8.98144C15.9192 10.683 11.7089 14.1925 10.1973 15.4379C8.68569 14.1928 4.47625 10.6836 2.94484 8.98174C1.44224 7.31165 1.42813 4.93318 2.91212 3.44919C3.67002 2.69159 4.66535 2.31249 5.66068 2.31249C6.65601 2.31249 7.65134 2.69129 8.40925 3.44919L9.54145 4.5814C9.67622 4.71617 9.84611 4.79661 10.0244 4.82483C10.3138 4.88696 10.6277 4.80622 10.8528 4.5817L11.9856 3.44919C13.5018 1.93369 15.9679 1.93399 17.4831 3.44919C18.9671 4.93318 18.953 7.31165 17.451 8.98144Z"
+													fill="#858FA4" />
+											</svg>
+											В избранное
+										</li>
+										<li>
+											<svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.396484" y="7" width="2" height="10" rx="1" fill="#858FA4" />
+												<rect x="5.39648" width="2" height="17" rx="1" fill="#858FA4" />
+												<rect x="10.3965" y="7" width="2" height="10" rx="1" fill="#858FA4" />
+												<rect x="15.3965" y="4" width="2" height="13" rx="1" fill="#858FA4" />
+											</svg>
+											В сравнение
+										</li>
+									</ul>
+									<ul class="characteristics">
+										<li>
+											<span>Тип дорожки:</span> Домашняя
+										</li>
+										<li>
+											<span>Мощность двигателя:</span> 2,0 л.с.
+										</li>
+										<li>
+											<span>Тип двигателя:</span> DC
+										</li>
+										<li>
+											<span>Беговое полотно:</span> 2-х слойное
+										</li>
+										<li>
+											<span>Беговое полотно (ДхШ):</span> 1200 х 450 мм
+										</li>
+										<li>
+											<span>Аудиосистема MP3:</span> Есть
+										</li>
+										<li>
+											<span>Консоль:</span> LCD 7 дюймовый дисплей
+										</li>
+										<li>
+											<a href="#">Все характеристики</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info__cart">
+									<h2 class="price">
+										<p id="modelPrice">1 000 000</p>
+										<s id="modelPastPrice">1 200 000₽</s>
+									</h2>
+									<h3 class="price-partner">
+										1 354 900 ₽ <span>Цена для дилера</span>
+									</h3>
+									<h4 class="bonus">
+										<span>+ 600 </span>Бонусных рублей
+									</h4>
+									<div class="cart" id="cartItem">
+										<div class="cart-btn" id="control">
+											<button class="button" data-action="minus">-</button>
+											<h4 class="value" id="sum" data-counter>1</h4>
+											<button class="button" data-action="plus">+</button>
+										</div>
+										<div class="btn-buy" id="BtnAddItemInCart">В корзину</div>
+									</div>
+									<h2 class="warning">
+										Купить в рассрочку от 16 658 ₽ /мес
+									</h2>
+								</div>
+							</div>
+							<div class="config">
+								<h4 class="title">
+									Конфигурация
+								</h4>
+								<ul class="config-info">
+									<li class="info">
+										<h4 class="subject">Размер, см</h4>
+										<ul class="items">
+											<li class="item active">
+												1500 × 2000
+											</li>
+											<li class="item">
+												1700 × 2000
+											</li>
+											<li class="item">
+												1900 × 2000 <span>+5000 ₽ </span>
+											</li>
+											<li class="item">
+												1700 × 2000 <span>+5000 ₽ </span>
+											</li>
+											<li class="item">
+												1900 × 2000 <span>+5000 ₽ </span>
+											</li>
+										</ul>
+									</li>
+									<li class="info">
+										<h4 class="subject">Вес стека, г</h4>
+										<ul class="items">
+											<li class="item active">
+												150
+											</li>
+											<li class="item">
+												500
+											</li>
+											<li class="item">
+												800<span>+500 ₽ </span>
+											</li>
+										</ul>
+									</li>
+									<li class="info">
+										<h4 class="subject">Цвет </h4>
+										<ul class="items">
+											<li class="item active">
+												<img src="./images/color-black.png" alt=""> Черный
+											</li>
+											<li class="item">
+												<img src="./images/color-graff.png" alt="">Графит
+											</li>
+											<li class="item">
+												<img src="./images/color-white.png" alt=""> Белый
+											</li>
+											<li class="item">
+												<img src="./images/color-red.png" alt=""> Красный<span>+500 ₽ </span>
+											</li>
+											<li class="item">
+												<img src="./images/color-white.png" alt=""> Белый<span>+500 ₽ </span>
+											</li>
+											<li class="item">
+												<img src="./images/color-red.png" alt=""> Красный<span>+500 ₽ </span>
+											</li>
+										</ul>
+									</li>
+									<li class="info">
+										<h4 class="subject">Цвет рамы </h4>
+										<ul class="items">
+											<li class="item active">
+												<img src="./images/color-black.png" alt=""> Черный
+											</li>
+											<li class="item">
+												<img src="./images/color-graff.png" alt="">Графит
+											</li>
+											<li class="item">
+												<img src="./images/color-white.png" alt=""> Белый
+											</li>
+											<li class="item">
+												<img src="./images/color-red.png" alt=""> Красный<span>+500 ₽ </span>
+											</li>
+										</ul>
+									</li>
+									<li class="info">
+										<h4 class="subject">Цвет обивки</h4>
+										<ul class="items">
+											<li class="item active">
+												<img src="./images/color-black.png" alt=""> Черный
+											</li>
+											<li class="item">
+												<img src="./images/color-graff.png" alt="">Графит
+											</li>
+											<li class="item">
+												<img src="./images/color-white.png" alt=""> Белый
+											</li>
+											<li class="item">
+												<img src="./images/color-red.png" alt=""> Красный<span>+500 ₽ </span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<section class="console road-offset">
+								<div class="container">
+									<div class="console__inner">
+										<h2 class="title">Добавьте консоль</h2>
+										<ul class="cards__items swiper console__items">
+											<div class="swiper-wrapper console__wrapper">
+												<li class="item swiper-slide console__item">
+													<img src="./images/Rectangle.png" alt="">
+													<h5 class="subject">Консоль XT-ONE SMART</h5>
+													<ul class="ranked">
+														<h6 class="link-menu">Рейтинг</h6>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+													</ul>
+													<h4>34 900 ₽</h4>
+													<button class="btn-buy">Добавить</button>
+												</li>
+												<li class="item swiper-slide console__item">
+													<img src="./images/Rectangle.png" alt="">
+													<h5 class="subject">Консоль XT-ONE SMART</h5>
+													<ul class="ranked">
+														<h6 class="link-menu">Рейтинг</h6>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+													</ul>
+													<h4>34 900 ₽</h4>
+													<button class="btn-buy">Добавить</button>
+												</li>
+												<li class="item swiper-slide console__item">
+													<img src="./images/Rectangle.png" alt="">
+													<h5 class="subject">Консоль XT-ONE SMART</h5>
+													<ul class="ranked">
+														<h6 class="link-menu">Рейтинг</h6>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+														<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+													</ul>
+													<h4>34 900 ₽</h4>
+													<button class="btn-buy">Добавить</button>
+												</li>
+											</div>
+										</ul>
+										<div class="swiper-buttons">
+											<button class="btn-next">
+												<svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M14 6.99414H1M1 6.99414L6.42466 1.49414M1 6.99414L6.42466 12.4941"
+														stroke="#F53B49" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+											<button class="btn-prev">
+												<svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1 6.99414H14M14 6.99414L8.57534 1.49414M14 6.99414L8.57534 12.4941"
+														stroke="#F53B49" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="console-info">
+								<ul class="rankeds">
+									<li class="rank">
+										Функциональность
+										<div class="stars">
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/star-off.png" alt=""></button>
+										</div>
+									</li>
+									<li class="rank">
+										Качество
+										<div class="stars">
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+										</div>
+									</li>
+									<li class="rank">
+										Комфорт
+										<div class="stars">
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+										</div>
+									</li>
+									<li class="rank">
+										Цена
+										<div class="stars">
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/star-off.png" alt=""></button>
+											<button><img src="./images/star-off.png" alt=""></button>
+										</div>
+									</li>
+									<li class="rank ranked-all">
+										<h4 class="subject">Общий рейтинг</h4>
+										<div class="stars">
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/Star 1.png" alt=""></button>
+											<button><img src="./images/star-off.png" alt=""></button>
+											<button><img src="./images/star-off.png" alt=""></button>
+										</div>
+									</li>
+								</ul>
+								<ul class="info">
+									<li class="item">
+										<img src="./images/ico.png" alt="">
+										<div class="text">
+											<p><b>Доставка</b> — бесплатно,
+												с 12 июля</p>
+											<p> <b>Самовывоз </b> из магазина
+												сегодня, 10 июля</p>
+											<a href="#">Другие способы доставки</a>
+										</div>
+									</li>
+									<li class="item">
+										<img src="./images/ico2.png" alt="">
+										<p><b>Сборка </b> — бесплатно</p>
+									</li>
+									<li class="item">
+										<img src="./images/ico3.png" alt="">
+										<div class="text">
+											<p>
+												<b>Оплата</b> — безналиная оплата, оплата картой, предоплата не требуется
+											</p>
+											<a href="#">Другие способы оплаты</a>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="model-info">
+			<div class="container">
+				<div class="model-info__inner">
+					<ul class="tabs">
+						<a class="link active" href="#">Описание</a>
+						<a class="link" href="#">Характеристики</a>
+						<a class="link" href="#">Отзывы</a>
+						<a class="link" href="#">Доставка и оплата</a>
+						<a class="link" href="#">Расрочка</a>
+						<a class="link" href="#">Услуги</a>
+						<a class="link" href="#">Покупают вместе</a>
+					</ul>
+					<div class="loader">
+						<a class="load load--instruction" href="#">Скачать инструкцию</a>
+						<a class="load load--catalog" href="#">Скачать каталог</a>
+					</div>
+					<div class="video">
+						<div class="text">
+							Беговые дорожки Bowflex Results Series ™ это самые совершенные технологии, высочайшее качество и
+							полноценная синхронизация данных.
+						</div>
+						<a class="video-link" href="#">Видео о товаре</a>
+					</div>
+					<ul class="items offset">
+						<li class="item">
+							<img src="./images/human3png.png" alt="">
+							<div class="text-content">
+								<h4 class="subject">Заголовок</h4>
+								<p class="text">
+									Беговая дорожка Bowlfex BXT128 – это одна из самых технологичных моделей для максимально
+									эффективных и комфортных тренировок.
+									<br><br>
+									Надежный двигатель мощностью 3.5 л.с. раскручивает полотно до 19.3 км/ч, а максимальный угол
+									наклона в 15% позволяет разнообразить тренировки и имитировать условия интенсивногоподъема
+									для любителей бега по пересеченной местности.
+									<br><br>
+
+									Беговая дорожка Bowlfex BXT128 оснащена высокопрочным 3-х слойным полотном размером
+									51x152 см и инновационной системой амортизации Comfort Tech 3 Теперь каждый шаг идеально
+									сглаживается, создавая ощущения пробежки на профессиональном покрытии!
+								</p>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/human4png.png" alt="">
+							<div class="text-content">
+								<h4 class="subject">Заголовок</h4>
+								<p class="text">
+									Беговая дорожка Bowlfex BXT128 – это одна из самых технологичных моделей для максимально
+									эффективных и комфортных тренировок.
+									<br><br>
+									Надежный двигатель мощностью 3.5 л.с. раскручивает полотно до 19.3 км/ч, а максимальный угол
+									наклона в 15% позволяет разнообразить тренировки и имитировать условия интенсивногоподъема
+									для любителей бега по пересеченной местности.
+									<br><br>
+
+									Беговая дорожка Bowlfex BXT128 оснащена высокопрочным 3-х слойным полотном размером
+									51x152 см и инновационной системой амортизации Comfort Tech 3 Теперь каждый шаг идеально
+									сглаживается, создавая ощущения пробежки на профессиональном покрытии!
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="swiper model-info__swiper">
+			<div class="swiper-wrapper model-info__swiper">
+				<div class="swiper-slide model-info__slide">
+					<img src="./images/swiper-model-slide1.png" alt="">
+				</div>
+				<div class="swiper-slide model-info__slide">
+					<img src="./images/swiper-model-slide1.png" alt="">
+				</div>
+				<div class="swiper-slide model-info__slide">
+					<img src="./images/swiper-model-slide1.png" alt="">
+				</div>
+			</div>
+			<div class="swiper-buttons">
+				<button class="btn-next">
+					<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 6.99414H1M1 6.99414L6.42466 1.49414M1 6.99414L6.42466 12.4941" stroke="#F53B49"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<button class="btn-prev">
+					<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 6.99414H14M14 6.99414L8.57534 1.49414M14 6.99414L8.57534 12.4941" stroke="#F53B49"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>
+		</div>
+		<section class="feature road-offset">
+			<div class="container">
+				<div class="feature__inner">
+					<div class="feature-content">
+						<div class="feature__title">
+							<h2 class="title">Характеристики</h2>
+							<a href="#" class="btn">Все характеристики</a>
+						</div>
+					</div>
+					<ul class="feature__items">
+						<li class="item active" id="accordion">
+							<h4 class="subject">Основные xарактеристики</h4>
+							<ul class="content">
+								<li class="item">
+									<p class="type"><span>Тип дорожки:</span></p>
+									<p class="text">Домашняя</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Мощность двигателя:</span></p>
+									<p class="text">3,5 л.с. постоянная</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Тип дорожки:</span></p>
+									<p class="text">DC</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Регулировка скорости</span></p>
+									<p class="text">1-19.3 км/ч</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Беговое полотно</span></p>
+									<p class="text">3-х слойное, усиленное 2,5 мм</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Наклон бегового полотна</span></p>
+									<p class="text">0 - 15%</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Размер бегового полотна (ДхШ)</span></p>
+									<p class="text">152 x 51 см</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Диаметр задних валов</span></p>
+									<p class="text">70 мм</p>
+								</li>
+								<li class="item">
+									<p class="type"><span>Программы тренировки</span></p>
+									<p class="text">9 предустановленных + возможность сохранения пользовательских программ</p>
+								</li>
+							</ul>
+						</li>
+						<li class="item" id="accordion">
+							<h4 class="subject">Мультимедиа</h4>
+							<ul class="content">
+								<li class="item">
+									<p class="type"><span>Тип дорожки:</span></p>
+									<p class="text">Домашняя</p>
+								</li>
+							</ul>
+						</li>
+						<li class="item" id="accordion">
+							<h4 class="subject">Дополнительные xарактеристики</h4>
+							<ul class="content">
+								<li class="item">
+									<p class="type"><span>Тип дорожки:</span></p>
+									<p class="text">Домашняя</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="reviews road-offset">
+			<div class="container">
+				<div class="reviews__inner">
+					<h2 class="title">Отзывы</h2>
+					<div class="reviews-content road-offset">
+						<div class="reviews-info">
+							<div class="text">
+								<div class="stars">
+									<h4 class="subject">4,5</h4>
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+								</div>
+								<p class="link-menu">1785 отзывов</p>
+							</div>
+							<ul class="reviews__items">
+								<li class="item">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									23 отзывов
+								</li>
+								<li class="item">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									5 отзывов
+								</li>
+								<li class="item">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									17 отзывов
+								</li>
+								<li class="item">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									4 отзывов
+								</li>
+								<li class="item">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									<img src="./images/star-off.png" alt="">
+									2 отзывов
+								</li>
+							</ul>
+						</div>
+						<div class="reviews-comment">
+							<h5 class="data">11 декабря 2020 14:15</h5>
+							<div class="user">
+								<img class="avatar" src="./images/avat25.png" alt="">
+								<h3 class="name">Александр Кройц</h3>
+								<div class="rank">
+									Оценка
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+								</div>
+							</div>
+							<p class="text">
+								Долго выбирали тренажер для дома, после рекомендации остановились именно на нем. Удобный,
+								устойчивый тренажер, для нас важным моментом было то что его легко перемещать за счет колесиков.
+							</p>
+						</div>
+						<div class="reviews-comment">
+							<h5 class="data">11 декабря 2020 14:15</h5>
+							<div class="user">
+								<img class="avatar" src="./images/avat25.png" alt="">
+								<h3 class="name">Александр Кройц</h3>
+								<div class="rank">
+									Оценка
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/Star 1.png" alt="">
+									<img src="./images/star-off.png" alt="">
+								</div>
+							</div>
+							<p class="text">
+								Долго выбирали тренажер для дома, после рекомендации остановились именно на нем. Удобный,
+								устойчивый тренажер, для нас важным моментом было то что его легко перемещать за счет колесиков.
+							</p>
+						</div>
+					</div>
+					<a href="#" class="btn">Все отзывы</a>
+				</div>
+			</div>
+		</section>
+		<section class="delivery road-offset">
+			<div class="container">
+				<div class="delivery__inner">
+					<h2 class="title">Доставка</h2>
+
+					<div class="select-county">
+						Город доставки:
+						<select name="" id="">
+							<option value="">Москва</option>
+							<option value="">Питер</option>
+							<option value="">Киев</option>
+							<option value="">Тбилиси</option>
+							<option value="">Батуми</option>
+						</select>
+					</div>
+					<div class="delivery__items">
+						<div class="item">
+							<div class="content">
+								<img class="img" src="./images/ico.png" alt="">
+								<p class="text">
+									<span>Самовывоз со склада</span> <br>
+									Забрать завтра 14 июля, после <br> 19:00 или в течение 14 дней
+								</p>
+								<p class="text">Склад №1, Московская область,
+									Красногорский р-н, пос. Гольево, МОИС-1, «Артишок»</p>
+								<p class="text">
+									Склад №1, Московская область,
+									Красногорский р-н, пос. Гольево, МОИС-1, «Артишок»
+								</p>
+								<div class="content">
+									<img class="img" src="./images/ico3.png" alt="">
+									<p class="text">
+										Предоплата не требуется
+									</p>
+								</div>
+							</div>
+							<h3 class="price">0 ₽</h3>
+						</div>
+						<div class="item">
+							<div class="content">
+								<img class="img" src="./images/ico.png" alt="">
+								<p class="text">
+									<span>Самовывоз со склада</span> <br>
+									Забрать завтра 20 июля, после <br> 19:00 или в течение 14 дней
+								</p>
+								<p class="text">
+									Москва, ТРК VEGAS Крокус Сити,
+									м. Мякинино, ул. Международная 12, 66 км МКАД
+								</p>
+								<div class="content">
+									<img class="img" src="./images/ico3.png" alt="">
+									<p class="text">
+										Предоплата не требуется
+									</p>
+								</div>
+							</div>
+							<h3 class="price">0 ₽</h3>
+						</div>
+						<div class="item">
+							<div class="content">
+								<img class="img" src="./images/ico.png" alt="">
+								<p class="text">
+									<span>Доставка</span> <br>
+									Забрать завтра 20 июля
+								</p>
+								<div class="content">
+									<img class="img" src="./images/ico3.png" alt="">
+									<p class="text">
+										Предоплата не требуется
+									</p>
+									<p class="text">
+										Бесплатно от 30 001 ₽ <br>
+										до 30 000 ₽ — 1000 ₽
+									</p>
+								</div>
+							</div>
+							<h3 class="price">0 ₽</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="console complect-console road-offset">
+			<div class="container">
+				<div class="console__inner">
+					<h2 class="title">С этим товаром покупают</h2>
+					<ul class="cards__items swiper console__items complect-console__items">
+						<div class="swiper-wrapper console__wrapper">
+							<li class="item swiper-slide console__item">
+								<img src="./images/Rectangle.png" alt="">
+								<h5 class="subject">Консоль XT-ONE SMART</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<h4>34 900 ₽</h4>
+								<button class="btn-buy">Добавить</button>
+							</li>
+							<li class="item swiper-slide console__item">
+								<img src="./images/Rectangle.png" alt="">
+								<h5 class="subject">Консоль XT-ONE SMART</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<h4>34 900 ₽</h4>
+								<button class="btn-buy">Добавить</button>
+							</li>
+							<li class="item swiper-slide console__item">
+								<img src="./images/Rectangle.png" alt="">
+								<h5 class="subject">Консоль XT-ONE SMART</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<h4>34 900 ₽</h4>
+								<button class="btn-buy">Добавить</button>
+							</li>
+						</div>
+					</ul>
+					<div class="swiper-buttons">
+						<button class="btn-next">
+							<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14 6.99414H1M1 6.99414L6.42466 1.49414M1 6.99414L6.42466 12.4941" stroke="#F53B49"
+									stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+						<button class="btn-prev">
+							<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 6.99414H14M14 6.99414L8.57534 1.49414M14 6.99414L8.57534 12.4941" stroke="#F53B49"
+									stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="complect offset">
+			<div class="container">
+				<div class="complect__inner">
+					<h2 class="title">Купить комплект</h2>
+					<ul class="complect__content">
+						<li class="item">
+							<img class="img" src="./images/card-4.png" alt="">
+							<h3 class="subject">Беговая дорожка Bowflex BXT128</h3>
+							<h3 class="subject">1 134 900 ₽</h3>
+							<s class="text">34 900 ₽</s>
+						</li>
+						<li class="item">
+							<ul class="products">
+								<li class="product">
+									<img class="img" src="./images/213.png" alt="">
+									<div class="content">
+										<h3 class="subject">
+											Консоль XT-ONE SMART
+											<p class="text">
+												Рейтинг
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/star-off.png" alt="">
+											</p>
+										</h3>
+										<div class="control">
+											<button class="button">-</button>
+											<h5>1</h5>
+											<button class="button">+</button>
+										</div>
+										<div class="price">
+											<h3 class="subject">1 034 900 ₽</h3>
+											<s>34 900 ₽</s>
+										</div>
+										<button class="clear">&#10006; Удалить</button>
+									</div>
+								</li>
+								<li class="product">
+									<img class="img" src="./images/213.png" alt="">
+									<div class="content">
+										<h3 class="subject">
+											Консоль XT-ONE SMART
+											<p class="text">
+												Рейтинг
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/star-off.png" alt="">
+											</p>
+										</h3>
+										<div class="control">
+											<button class="button">-</button>
+											<h5>1</h5>
+											<button class="button">+</button>
+										</div>
+										<div class="price">
+											<h3 class="subject">1 034 900 ₽</h3>
+											<s>34 900 ₽</s>
+										</div>
+										<button class="clear">&#10006; Удалить</button>
+									</div>
+								</li>
+								<li class="product">
+									<img class="img" src="./images/213.png" alt="">
+									<div class="content">
+										<h3 class="subject">
+											Консоль XT-ONE SMART
+											<p class="text">
+												Рейтинг
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/Star 1.png" alt="">
+												<img src="./images/star-off.png" alt="">
+											</p>
+										</h3>
+										<div class="control">
+											<button class="button">-</button>
+											<h5>1</h5>
+											<button class="button">+</button>
+										</div>
+										<div class="price">
+											<h3 class="subject">1 034 900 ₽</h3>
+											<s>34 900 ₽</s>
+										</div>
+										<button class="clear">&#10006; Удалить</button>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="title">1 134 900 ₽</h2>
+							<s>34 900 ₽</s>
+							<a href="" class="btn-buy">В корзину</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="cards offset">
+			<div class="container">
+				<div class="cards__inner">
+					<h2 class="title">
+						Мы рекомендуем
+					</h2>
+					<ul class="cards__items swiper cards__swiper">
+						<div class="swiper-wrapper cards__wrapper">
+							<li class="item swiper-slide cards__slide">
+								<div class="item-info">
+									<div class="item-info-img">
+										<img src="./images/vector1.svg" alt="">
+										<img src="./images/vector2.svg" alt="">
+										<img src="./images/vector3.svg" alt="">
+									</div>
+									<div class="item-info-cart">
+										<button><img src="./images/vector26.svg" alt=""></button>
+										<button><img src="./images/Vector22.svg" alt=""></button>
+
+									</div>
+								</div>
+								<img src="./images/card-1.png" alt="">
+								<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<div class="price">
+									<div class="price-text">
+										<h4>1 134 900 ₽</h4>
+										<s class="link-menu">1 134 900 ₽</s>
+									</div>
+									<button class="btn-buy">Купить</button>
+								</div>
+							</li>
+							<li class="item swiper-slide cards__slide">
+								<div class="item-info">
+									<div class="item-info-img">
+										<img src="./images/vector1.svg" alt="">
+										<img src="./images/vector2.svg" alt="">
+										<img src="./images/vector3.svg" alt="">
+									</div>
+									<div class="item-info-cart">
+										<button><img src="./images/vector26.svg" alt=""></button>
+										<button><img src="./images/Vector22.svg" alt=""></button>
+
+									</div>
+								</div>
+								<img src="./images/card-2.png" alt="">
+								<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<div class="price">
+									<div class="price-text">
+										<h4>1 134 900 ₽</h4>
+										<s class="link-menu">1 134 900 ₽</s>
+									</div>
+									<button class="btn-buy">Купить</button>
+								</div>
+							</li>
+							<li class="item swiper-slide cards__slide">
+								<div class="item-info">
+									<div class="item-info-img">
+										<img src="./images/vector1.svg" alt="">
+										<img src="./images/vector2.svg" alt="">
+										<img src="./images/vector3.svg" alt="">
+									</div>
+									<div class="item-info-cart">
+										<button><img src="./images/vector26.svg" alt=""></button>
+										<button><img src="./images/Vector22.svg" alt=""></button>
+
+									</div>
+								</div>
+								<img src="./images/card-3.png" alt="">
+								<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<div class="price">
+									<div class="price-text">
+										<h4>1 134 900 ₽</h4>
+										<s class="link-menu">1 134 900 ₽</s>
+									</div>
+									<button class="btn-buy">Купить</button>
+								</div>
+							</li>
+							<li class="item swiper-slide cards__slide">
+								<div class="item-info">
+									<div class="item-info-img">
+										<img src="./images/vector1.svg" alt="">
+										<img src="./images/vector2.svg" alt="">
+										<img src="./images/vector3.svg" alt="">
+									</div>
+									<div class="item-info-cart">
+										<button><img src="./images/vector26.svg" alt=""></button>
+										<button><img src="./images/Vector22.svg" alt=""></button>
+
+									</div>
+								</div>
+								<img src="./images/card-4.png" alt="">
+								<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+								<ul class="ranked">
+									<h6 class="link-menu">Рейтинг</h6>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+									<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								</ul>
+								<div class="price">
+									<div class="price-text">
+										<h4>1 134 900 ₽</h4>
+										<s class="link-menu">1 134 900 ₽</s>
+									</div>
+									<button class="btn-buy">Купить</button>
+								</div>
+							</li>
+						</div>
+						<div class="swiper-buttons">
+							<button class="btn-next">
+								<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14 6.99414H1M1 6.99414L6.42466 1.49414M1 6.99414L6.42466 12.4941" stroke="#F53B49"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+							<button class="btn-prev">
+								<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 6.99414H14M14 6.99414L8.57534 1.49414M14 6.99414L8.57534 12.4941"
+										stroke="#F53B49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="cards offset">
+			<div class="container">
+				<div class="cards__inner cards__wrapper--seen">
+					<h2 class="title">Вы смотрели</h2>
+					<ul class="cards__items ">
+						<li class="item">
+							<img src="./images/card-1.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/card-2.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/card-3.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/card-4.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/card-4.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<img src="./images/card-4.png" alt="">
+							<h5 class="subject">Беговая дорожка CardioPower S35</h5>
+							<ul class="ranked">
+								<h6 class="link-menu">Рейтинг</h6>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+								<button class="rank"><img src="./images/Star 1.png" alt=""></button>
+							</ul>
+							<div class="price">
+								<div class="price-text">
+									<h4>34 900 ₽</h4>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__items">
+					<li class="item">
+						<h5 class="subject">Поддержка</h5>
+						<a class="link" href="#">Для дома</a>
+						<a class="link" href="#">Для фитнес клубов</a>
+						<a class="link" href="#">Акции</a>
+						<a class="link" href="#">Идеи и подборки </a>
+						<a class="link" href="#">Новинки</a>
+						<a class="link" href="#">Наши бренды</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">Каталог</h5>
+						<a class="link" href="#">Доставка и оплата</a>
+						<a class="link" href="#">Условия возврата</a>
+						<a class="link" href="#">Сервисная заявка</a>
+						<a class="link" href="#">Обслуживание фитнес клубов </a>
+						<a class="link" href="#">FAQ</a>
+						<a class="link" href="#">Инструкции</a>
+						<a class="link" href="#">Гарантия</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">Услуги</h5>
+						<a class="link" href="#">3D проект</a>
+						<a class="link" href="#">Консалтинг</a>
+						<a class="link" href="#">Бизнес планирование </a>
+						<a class="link" href="#">Лизинг </a>
+						<a class="link" href="#">Trade-IN</a>
+						<a class="link" href="#">В рассрочку</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">О компании</h5>
+						<a class="link" href="#">О нас</a>
+						<a class="link" href="#">Наша миссия </a>
+						<a class="link" href="#">Наша команда </a>
+						<a class="link" href="#">Наши проекты </a>
+						<a class="link" href="#">Новости</a>
+						<a class="link" href="#">Где купить</a>
+						<a class="link" href="#">Контакты</a>
+					</li>
+					<li class="item">
+						<button class="button">Подписаться на рассылку</button>
+						<div class="phone">
+							<a class="link" href="tel:+70000000000">+7 (000) 000-00-00 для Москвы</a>
+							<a class="link" href="tel:+8800000000">8 (800) 000-00-00 для России</a>
+							<a href="#">Заказать звонок</a>
+						</div>
+						<div class="mail">
+							<a class="link" href="#">wellfitness@wellfit.ru</a>
+							<a href="#">Написать</a>
+						</div>
+						<div class="roots">
+							<a href="#">Политика конфиденциальности</a>
+							<a href="#">Публичная офферта</a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer-down-content">
+					<div href="#" class="footer__logo">
+						<a class="logo" href="#">
+							<img src="./images/logo.png" alt="">
+						</a>
+						<a class="link" href="#">© WellFitness. 2007 Все права защищены</a>
+					</div>
+					<ul class="social">
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.9972 8.33177C9.97738 8.33177 8.32902 9.98013 8.32902 12C8.32902 14.0199 9.97738 15.6682 11.9972 15.6682C14.0171 15.6682 15.6655 14.0199 15.6655 12C15.6655 9.98013 14.0171 8.33177 11.9972 8.33177ZM22.9992 12C22.9992 10.481 23.0129 8.97571 22.9276 7.45943C22.8423 5.69824 22.4406 4.13519 21.1527 2.84732C19.8621 1.55669 18.3018 1.15767 16.5406 1.07237C15.0215 0.987059 13.5163 1.00082 12 1.00082C10.481 1.00082 8.97571 0.987059 7.45943 1.07237C5.69824 1.15767 4.13519 1.55945 2.84732 2.84732C1.55669 4.13794 1.15767 5.69824 1.07237 7.45943C0.987059 8.97846 1.00082 10.4837 1.00082 12C1.00082 13.5163 0.987059 15.0243 1.07237 16.5406C1.15767 18.3018 1.55945 19.8648 2.84732 21.1527C4.13794 22.4433 5.69824 22.8423 7.45943 22.9276C8.97846 23.0129 10.4837 22.9992 12 22.9992C13.519 22.9992 15.0243 23.0129 16.5406 22.9276C18.3018 22.8423 19.8648 22.4406 21.1527 21.1527C22.4433 19.8621 22.8423 18.3018 22.9276 16.5406C23.0157 15.0243 22.9992 13.519 22.9992 12ZM11.9972 17.6441C8.87389 17.6441 6.35318 15.1234 6.35318 12C6.35318 8.87664 8.87389 6.35594 11.9972 6.35594C15.1206 6.35594 17.6413 8.87664 17.6413 12C17.6413 15.1234 15.1206 17.6441 11.9972 17.6441ZM17.8725 7.44292C17.1432 7.44292 16.5543 6.85402 16.5543 6.12478C16.5543 5.39554 17.1432 4.80664 17.8725 4.80664C18.6017 4.80664 19.1906 5.39554 19.1906 6.12478C19.1908 6.29794 19.1569 6.46945 19.0907 6.62947C19.0245 6.78949 18.9275 6.93489 18.805 7.05733C18.6826 7.17978 18.5372 7.27686 18.3772 7.34303C18.2171 7.40919 18.0456 7.44314 17.8725 7.44292Z"
+									fill="#909CB5" />
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1093_24818)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+										fill="#909CB5" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1093_24818">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1093_24819)">
+									<path
+										d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z"
+										fill="#909CB5" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1093_24819">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</ul>
+					<div class="footer-info">
+						<a class="link-menu active" href="#">Become a Partner </a>
+						<a class="link-menu" href="#">Для дилеров </a>
+
+					</div>
+					<ul class="bank">
+						<img src="./images/bank1.png" alt="">
+						<img src="./images/bank2.png" alt="">
+						<img src="./images/bank3.png" alt="">
+						<img src="./images/bank4.png" alt="">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__head-menu">
+					<a href="index.html" class="header__logo--dekstop">
+						<img class="logo" src="./images/logo.png" alt="">
+					</a>
+					<button class="header__country-search--dekstop link-menu">
+						Москва
+					</button>
+					<div class="header__partner-menu">
+						<a class="item link-menu" href="#">Для дилеров</a>
+						<a class="item link-menu active" href="#">Become a Partner </a>
+					</div>
+					<div class="header__number-menu">
+						<a class="link" href="tel:+78000000000">+7 (800) 000-00-00 <a href="#" class="link-menu">МСК</a></a>
+						<a href="#" class="link" id="call-model"><span>Заказать звонок</span></a>
+					</div>
+					<div class="header__sign-menu" id="sign-up-menu">
+						<a class="sign" href="#" id="sign">Войти</a>
+						<div class="modal" id="modal">
+							<h4></h4>
+						</div>
+						<img src="./images/profile.png" alt="" id="sign-avatar">
+					</div>
+				</div>
+				<div class="header__main-menu">
+					<a href="index.html" class="header__logo">
+						<img class="logo" src="./images/logo.png" alt="">
+					</a>
+					<button class="header__country-search link-menu">
+						Москва
+					</button>
+					<button class="header__catalog-btn">
+						Каталог
+					</button>
+					<div class="header__search decore-line">
+						<img src="./images/search.svg" alt="">
+					</div>
+					<ul class="header__links">
+						<a href="brands.html" class="link">Бренды</a>
+						<a href="service.html" class="link">Сервис</a>
+						<a href="services.html" class="link">Услуги</a>
+						<a href="support.html" class="link">Поддержка</a>
+						<a href="amount.html" class="link">О компании</a>
+						<a href="blog.html" class="link">Блог</a>
+						<a href="location.html" class="link">Где купить</a>
+						<a href="contact.html" class="link">Контакты</a>
+
+					</ul>
+					<ul class="header__item-info" id="hoverItems">
+						<li class="item" id="analyticsItem">
+							<a href="comparison.html" class=" analytics">
+								<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<rect y="7.5" width="2" height="10" rx="1" fill="white" />
+										<rect x="5" y="0.5" width="2" height="17" rx="1" fill="white" />
+										<rect x="10" y="7.5" width="2" height="10" rx="1" fill="white" />
+										<rect x="15" y="4.5" width="2" height="13" rx="1" fill="white" />
+									</g>
+								</svg>
+
+							</a>
+							<div class="content"></div>
+						</li>
+						<li class="item" id="favItem">
+							<a href="#" class=" favorites" id="favorites">
+								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<path
+											d="M22.0718 1.96031C19.4616 -0.649176 15.2154 -0.649176 12.6059 1.96031L11.9998 2.56606L11.394 1.96031C8.78455 -0.64953 4.53796 -0.64953 1.92847 1.96031C-0.628032 4.51681 -0.644633 8.56914 1.88997 11.3867C4.2017 13.9555 11.0196 19.5054 11.3089 19.7403C11.5053 19.9 11.7416 19.9777 11.9765 19.9777C11.9842 19.9777 11.992 19.9777 11.9994 19.9773C12.2424 19.9886 12.4872 19.9053 12.6899 19.7403C12.9792 19.5054 19.7979 13.9555 22.1103 11.3863C24.6445 8.56914 24.6279 4.51681 22.0718 1.96031ZM20.535 9.96889C18.7326 11.9712 13.7782 16.1009 11.9994 17.5663C10.2207 16.1013 5.26732 11.9719 3.46527 9.96925C1.69712 8.00401 1.68052 5.20521 3.42677 3.45896C4.31861 2.56747 5.48984 2.12137 6.66107 2.12137C7.8323 2.12137 9.00354 2.56711 9.89538 3.45896L11.2277 4.79125C11.3863 4.94984 11.5862 5.0445 11.796 5.0777C12.1365 5.15081 12.5059 5.0558 12.7708 4.7916L14.1038 3.45896C15.8879 1.67562 18.7898 1.67598 20.5728 3.45896C22.319 5.20521 22.3024 8.00401 20.535 9.96889Z"
+											fill="white" />
+									</g>
+								</svg>
+
+							</a>
+							<div class="content"></div>
+						</li>
+						<li class="item" id="cartItem">
+							<a href="cart.html" class=" carts" id="carts-icon">
+								<svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="0.7">
+										<path
+											d="M0.9 7.73325H20.1V21.4999C20.1 23.212 18.7121 24.5999 17 24.5999H4C2.28792 24.5999 0.9 23.212 0.9 21.4999V7.73325Z"
+											stroke="white" stroke-width="1.8" />
+										<path
+											d="M5.83464 12.6667L5.83464 5.00008C5.83464 2.79095 7.6255 1.00008 9.83464 1.00008H11.168C13.3771 1.00008 15.168 2.79094 15.168 5.00008L15.168 12.6667"
+											stroke="white" stroke-width="1.8" />
+									</g>
+								</svg>
+							</a>
+							<div class="content">
+								<div class="content__inner">
+									<ul class="items" id="items">
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="header__burger ">
+						<button class="header__burger-btn" id="burger-btn">
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+							<div class="burger-line"></div>
+						</button>
+						<div class="header__burger-content">
+							<div class="burger__top-content">
+								<button class="header__country-search link-menu">
+									Москва
+								</button>
+								<div class="header__sign-menu">
+									<a class="sign" href="#">Войти</a>
+									<img src="./images/profile.png" alt="">
+								</div>
+							</div>
+							<div class="search">
+								<img src="./images/search.svg" alt="" class="img">
+								<input type="text" placeholder="Поиск">
+							</div>
+
+							<div class="catalog">
+								<h2 class="title">Каталог</h2>
+								<button class="button">
+									<a href="#">Для дома</a>
+									<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<button class="button">
+									<a href="#">Для фитнес клубов</a>
+									<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+
+							<ul class="header__links">
+								<a href="brands.html" class="link">Бренды</a>
+								<a href="service.html" class="link">Сервис</a>
+								<a href="services.html" class="link">Услуги</a>
+								<a href="support.html" class="link">Поддержка</a>
+								<a href="amount.html" class="link">О компании</a>
+								<a href="blog.html" class="link">Блог</a>
+								<a href="location.html" class="link">Где купить</a>
+								<a href="contact.html" class="link">Контакты</a>
+
+							</ul>
+							<div class="header__number-menu">
+								<a class="link" href="tel:+78000000000">+7 (800) 000-00-00 <a href="#"
+										class="link-menu">МСК</a></a>
+								<a href="#" class="link"><span>Заказать звонок</span></a>
+							</div>
+							<div class="header__partner-menu">
+								<a class="item link-menu" href="#">Для дилеров</a>
+								<a class="item link-menu" href="#">Become a Partner </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__drop-menu">
+			<div class="header__inner">
+				<div class="container">
+					<ul class="drop-menu">
+						<a href="catalog-house.html" class="item decore-line">
+							<span>Для дома</span>
+							</ф>
+							<a href="catalog-club.html" class="item decore-pointer">
+								<span>Для фитнес клуба</span>
+							</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="road road-offset">
+			<div class="container">
+				<a href="index.html" class="index"><svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.6896 7.87711L7.87425 0.664272C7.82518 0.612198 7.76689 0.570885 7.70273 0.542697C7.63856 0.514509 7.56978 0.5 7.50031 0.5C7.43084 0.5 7.36206 0.514509 7.29789 0.542697C7.23373 0.570885 7.17544 0.612198 7.12637 0.664272L0.311065 7.87711C0.112513 8.08739 0 8.37303 0 8.67094C0 9.28953 0.474871 9.79247 1.05895 9.79247H1.77704V14.9392C1.77704 15.2494 2.01365 15.5 2.30652 15.5H6.44136V11.5746H8.29452V15.5H12.6941C12.987 15.5 13.2236 15.2494 13.2236 14.9392V9.79247H13.9417C14.223 9.79247 14.4927 9.67506 14.6912 9.46302C15.1032 9.02492 15.1032 8.3152 14.6896 7.87711Z"
+							fill="#B9C0CF" />
+					</svg>
+				</a> <a href="#" class="road-link">Поддержка » Инструкции </a>
+			</div>
+		</section>
+		<section class="support support-instruction">
+			<div class="container">
+				<div class="support__inner">
+					<h2 class="title">Инструкции</h2>
+					<div class="support__content">
+						<ul class="links">
+							<a href="support.html" class="link ">Доставка и оплата</a>
+							<a href="support-return.html" class="link">Условия возврата</a>
+							<a href="support-garant.html" class="link ">Гарантия </a>
+							<a href="support-faq.html" class="link ">FAQ </a>
+							<a href="#" class="link active">Инструкции </a>
+							<a href="#" class="link">Личный кабинет </a>
+							<a href="#" class="link">B2B Кабинет </a>
+						</ul>
+						<div class="content">
+							<ul class="accord-items">
+								<li class="accord-item active" id="accordion">
+									<button class="accord-btn">
+										<h2 class="title">Bowflex</h2>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<ul class="accord-items">
+											<h4 class="subject">Беговые дорожки</h4>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T10</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T10</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T20 Plus</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T20</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower TT Plus</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower S35</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T30</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+											<li class="accord-item item">
+												<p class="text">Беговая дорожка CardioPower T35</p>
+												<a href="#" class="link">
+													Скачать</a>
+											</li>
+										</ul>
+										<ul class="accord-items">
+											<h4 class="subject">Велотренажеры</h4>
+										</ul>
+										<ul class="accord-items">
+											<h4 class="subject">Гребные тренажеры</h4>
+										</ul>
+										<ul class="accord-items">
+											<h4 class="subject">Эллиптические тренажеры</h4>
+										</ul>
+										<ul class="accord-items">
+											<h4 class="subject">Велотренажеры</h4>
+										</ul>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Boxingbar</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">CardioPower </h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Cardiopower Pro</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Double Fish</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Eclipse</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Gym80</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">HYFIT</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+								<li class="accord-item" id="accordion">
+									<button class="accord-btn">
+										<h4 class="subject">Kernel</h4>
+										<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6.5H14M14 6.5L8.57534 1M14 6.5L8.57534 12" stroke="#F53B49"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="accord-content">
+										<p class="text">Значимость этих проблем настолько очевидна, что рамки и место обучения
+											кадров требуют от нас анализа существенных финансовых и административных условий. С
+											другой стороны начало повседневной работы по формированию позиции влечет за собой
+											процесс внедрения и модернизации направлений прогрессивного развития.
+											<br>
+											<br>
+											Равным образом постоянный количественный рост и сфера нашей активности в значительной
+											степени обуславливает создание позиций, занимаемых участниками в отношении поставленных
+											задач. С другой стороны укрепление и развитие структуры играет важную роль в
+											формировании системы обучения кадров, соответствует насущным потребностям.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__items">
+					<li class="item">
+						<h5 class="subject">Поддержка</h5>
+						<a class="link" href="#">Для дома</a>
+						<a class="link" href="#">Для фитнес клубов</a>
+						<a class="link" href="#">Акции</a>
+						<a class="link" href="#">Идеи и подборки </a>
+						<a class="link" href="#">Новинки</a>
+						<a class="link" href="#">Наши бренды</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">Каталог</h5>
+						<a class="link" href="#">Доставка и оплата</a>
+						<a class="link" href="#">Условия возврата</a>
+						<a class="link" href="#">Сервисная заявка</a>
+						<a class="link" href="#">Обслуживание фитнес клубов </a>
+						<a class="link" href="#">FAQ</a>
+						<a class="link" href="#">Инструкции</a>
+						<a class="link" href="#">Гарантия</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">Услуги</h5>
+						<a class="link" href="#">3D проект</a>
+						<a class="link" href="#">Консалтинг</a>
+						<a class="link" href="#">Бизнес планирование </a>
+						<a class="link" href="#">Лизинг </a>
+						<a class="link" href="#">Trade-IN</a>
+						<a class="link" href="#">В рассрочку</a>
+					</li>
+					<li class="item">
+						<h5 class="subject">О компании</h5>
+						<a class="link" href="#">О нас</a>
+						<a class="link" href="#">Наша миссия </a>
+						<a class="link" href="#">Наша команда </a>
+						<a class="link" href="#">Наши проекты </a>
+						<a class="link" href="#">Новости</a>
+						<a class="link" href="#">Где купить</a>
+						<a class="link" href="#">Контакты</a>
+					</li>
+					<li class="item">
+						<button class="button">Подписаться на рассылку</button>
+						<div class="phone">
+							<a class="link" href="tel:+70000000000">+7 (000) 000-00-00 для Москвы</a>
+							<a class="link" href="tel:+8800000000">8 (800) 000-00-00 для России</a>
+							<a href="#">Заказать звонок</a>
+						</div>
+						<div class="mail">
+							<a class="link" href="#">wellfitness@wellfit.ru</a>
+							<a href="#">Написать</a>
+						</div>
+						<div class="roots">
+							<a href="#">Политика конфиденциальности</a>
+							<a href="#">Публичная офферта</a>
+						</div>
+					</li>
+				</ul>
+				<div class="footer-down-content">
+					<div href="#" class="footer__logo">
+						<a class="logo" href="#">
+							<img src="./images/logo.png" alt="">
+						</a>
+						<a class="link" href="#">© WellFitness. 2007 Все права защищены</a>
+					</div>
+					<ul class="social">
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11.9972 8.33177C9.97738 8.33177 8.32902 9.98013 8.32902 12C8.32902 14.0199 9.97738 15.6682 11.9972 15.6682C14.0171 15.6682 15.6655 14.0199 15.6655 12C15.6655 9.98013 14.0171 8.33177 11.9972 8.33177ZM22.9992 12C22.9992 10.481 23.0129 8.97571 22.9276 7.45943C22.8423 5.69824 22.4406 4.13519 21.1527 2.84732C19.8621 1.55669 18.3018 1.15767 16.5406 1.07237C15.0215 0.987059 13.5163 1.00082 12 1.00082C10.481 1.00082 8.97571 0.987059 7.45943 1.07237C5.69824 1.15767 4.13519 1.55945 2.84732 2.84732C1.55669 4.13794 1.15767 5.69824 1.07237 7.45943C0.987059 8.97846 1.00082 10.4837 1.00082 12C1.00082 13.5163 0.987059 15.0243 1.07237 16.5406C1.15767 18.3018 1.55945 19.8648 2.84732 21.1527C4.13794 22.4433 5.69824 22.8423 7.45943 22.9276C8.97846 23.0129 10.4837 22.9992 12 22.9992C13.519 22.9992 15.0243 23.0129 16.5406 22.9276C18.3018 22.8423 19.8648 22.4406 21.1527 21.1527C22.4433 19.8621 22.8423 18.3018 22.9276 16.5406C23.0157 15.0243 22.9992 13.519 22.9992 12ZM11.9972 17.6441C8.87389 17.6441 6.35318 15.1234 6.35318 12C6.35318 8.87664 8.87389 6.35594 11.9972 6.35594C15.1206 6.35594 17.6413 8.87664 17.6413 12C17.6413 15.1234 15.1206 17.6441 11.9972 17.6441ZM17.8725 7.44292C17.1432 7.44292 16.5543 6.85402 16.5543 6.12478C16.5543 5.39554 17.1432 4.80664 17.8725 4.80664C18.6017 4.80664 19.1906 5.39554 19.1906 6.12478C19.1908 6.29794 19.1569 6.46945 19.0907 6.62947C19.0245 6.78949 18.9275 6.93489 18.805 7.05733C18.6826 7.17978 18.5372 7.27686 18.3772 7.34303C18.2171 7.40919 18.0456 7.44314 17.8725 7.44292Z"
+									fill="#909CB5" />
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1093_24818)">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+										fill="#909CB5" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1093_24818">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1093_24819)">
+									<path
+										d="M14.0037 11.7913L11.1963 10.4813C10.9513 10.3675 10.75 10.495 10.75 10.7662V13.2338C10.75 13.505 10.9513 13.6325 11.1963 13.5188L14.0025 12.2087C14.2488 12.0938 14.2487 11.9063 14.0037 11.7913ZM12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM12 16.875C5.8575 16.875 5.75 16.3213 5.75 12C5.75 7.67875 5.8575 7.125 12 7.125C18.1425 7.125 18.25 7.67875 18.25 12C18.25 16.3213 18.1425 16.875 12 16.875Z"
+										fill="#909CB5" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1093_24819">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</ul>
+					<div class="footer-info">
+						<a class="link-menu active" href="#">Become a Partner </a>
+						<a class="link-menu" href="#">Для дилеров </a>
+
+					</div>
+					<ul class="bank">
+						<img src="./images/bank1.png" alt="">
+						<img src="./images/bank2.png" alt="">
+						<img src="./images/bank3.png" alt="">
+						<img src="./images/bank4.png" alt="">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script type="module" src="js/main.js"></script>
+</body>
+
+</html>
